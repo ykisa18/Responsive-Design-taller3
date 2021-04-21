@@ -1,0 +1,93 @@
+body, main{
+     padding: 0px;
+     margin: 0px;
+}
+
+.menu-complete{
+    width: 100%;
+    height: 10vh;
+}
+
+.menu-complete .row{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(185, 183, 183);
+}
+
+.menu-complete .row ul{
+    padding-left: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-complete .row ul li{
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+.menu-complete .row ul li:hover{
+    background-color: rgb(206, 206, 206);
+}
+
+.menu-complete .row ul li a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1.5px;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .menu-mobile{
+        display: block;
+    }
+
+    .menu-mobile .row{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(185, 183, 183);
+    }
+
+    .menu-mobile .row ul{
+        padding-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+
+    .menu-mobile .row ul li{
+        font-family: 'Merriweather', serif;
+        font-size: 1.5em;
+        width: 100%;
+        height: 100%;
+        padding: 8px 0px;
+        list-style: none;
+    }
+
+    .menu-mobile .row ul li:hover{
+        background-color: rgb(206, 206, 206);
+
+    }
+
+    .menu-mobile .row ul li a{
+        text-decoration: none;
+        width: 100%;
+        color: black;
+        letter-spacing: 1.5px;
+    }
+
+    .menu-complete{
+        display: none;
+    }
+}
